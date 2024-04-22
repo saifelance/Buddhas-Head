@@ -1,0 +1,28 @@
+<html>
+<h1>Collect Ids</h1>
+<script>
+    logMovies();
+    async function logMovies() {
+  const response = await fetch("");
+  const modules = await response.json();
+  console.log(modules);
+
+  const extractUrls = (data) => {
+      let urls = [];
+      data.forEach(module => {
+        module.Topics.forEach(topic => {
+          if (topic.Url) {
+            urls.push(topic.Url);
+          }
+        });
+      });
+      return urls;
+    };
+
+    const urls = extractUrls(modules);
+    console.log(urls);
+
+  //modules.Topic.Url[X] for all found in the array
+}
+ </script>
+</html>
