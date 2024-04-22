@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Buddha's Head</title>
+
+		<link rel="stylesheet" href="css/styles.css">
+		<!--<link rel="icon" href="assets/images/icon.ico" type="image/x-icon">-->
+	</head>
+
+    <body>
+
+		<div id="app">
+
+			<div id="intro_screen" class="screen">
+
+				<div>
+
+					<label>0%</label>
+
+					<button>Start</button>
+
+					<!--<div class="screen_buttons_cont">
+
+						<button class="toggle_fullscreen_screen_button">Toggle Fullscreen</button>
+
+					</div>-->
+
+				</div>
+
+			</div>
+
+			<div id="main_screen" class="screen">
+
+				<canvas id="main_screen_canvas"></canvas>
+
+				<div class="screen_buttons_cont">
+
+					<button class="play_button">Play</button>
+					<button class="pause_button">Pause</button>
+					<button class="outro_screen_button">Outro</button>
+					<button class="lobby_screen_button">To World</button>
+					<button class="toggle_fullscreen_screen_button">Toggle Fullscreen</button>
+
+				</div>
+
+				<div class="joystick_buttons_cont">
+
+					<button class="joystick_button_left">←</button>
+					<button class="joystick_button_right">→</button>
+					<button class="joystick_button_forward">↑</button>
+					<button class="joystick_button_backward">↓</button>
+
+				</div>
+
+			</div>
+
+			<div id="outro_screen" class="screen">
+
+				<p>Some text here</p>
+
+				<div class="screen_buttons_cont">
+
+					<button class="play_button">Play</button>
+					<button class="pause_button">Pause</button>
+					<button class="main_screen_button">Main</button>
+					<button class="toggle_fullscreen_screen_button">Toggle Fullscreen</button>
+
+				</div>
+
+			</div>
+
+			<div id="screen_hider" class="screen"></div>
+
+		</div>
+
+		<script src="js/libs/tiny_tween.js"></script>
+
+		<script src="js/libs/three.js"></script>
+		<script src="js/libs/OBJLoader.js"></script>
+		<script src="js/libs/OrbitControls.js"></script>
+		<script src="js/libs/PointerLockControls.js"></script>
+		<script src="js/libs/shaderfrog-runtime.min.js"></script>
+
+        <script type="module" src="js/App.js"></script>
+
+    </body>
+
+</html>
