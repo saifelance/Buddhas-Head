@@ -1,6 +1,7 @@
 {
   "name": "buddhas-head",
   "version": "1.0.0",
+  "devloper" : "dev chat",
   "private": true,
   "scripts": {
     "build": "webpack"
